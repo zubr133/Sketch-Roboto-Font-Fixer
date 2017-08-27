@@ -1,0 +1,26 @@
+{
+    "name" : "Roboto Font Fixer",
+    "description" : "A plugin that adjusts character spacing of Roboto font",
+    "author" : "Konstantin Smirnov",
+    "authorEmail" : "zubr133@gmail.com",
+    "homepage": "https://gingerbeard.ru",
+    "version" : "0.1",
+    "identifier" : "com.konstantinsmirnov.roboto-font-fixer",
+    "appcast" : "https://api.sketchpacks.com/v1/plugins/com.konstantinsmirnov.roboto-font-fixer/appcast",
+
+    "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "handler" : "onRun",
+      "shortcut" : "command shift y",
+      "name" : "Get Page Names",
+      "identifier" : "fixSelectedLayers"
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "fixSelectedLayers",
+    ]
+  }
+}

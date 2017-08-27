@@ -1,0 +1,41 @@
+var adjustRobotoFontForLayer = function(layer) {
+  var fontSize = layer.fontSize();
+
+  var tracking = 0;
+
+  if (fontSize <= 12) tracking = 20;
+        else if (fontSize >= 13 && fontSize <= 19) tracking = 10;
+        else if (fontSize >= 20 && fontSize <= 23) tracking = 5;
+        else if (fontSize >= 24 && fontSize <= 55) tracking = 0;
+        else if (fontSize >= 56 && fontSize <= 111) tracking = -5;
+        else if (fontSize >= 112) tracking = -10;
+
+  var spacing = fontSize * tracking / 1000;
+
+  [layer setCharacterSpacing:spacing];
+
+};
+
+var onRun = function(context) {
+  
+  //reference the Sketch Document
+  var doc = context.document;
+
+  var selectedLayers = context.selection;
+  var loop = [selectedLayers objectEnumerator];
+
+  while (layer = [loop nextObject]) {
+    if (layer.isKindOfClass(MSTextLayer)) {      
+      var fontName = layer.fontPostscriptName();      
+      if (fontName.hasPrefix("Roboto")) {
+          adjustRobotoFontForLayer(layer);          
+          //show a message
+          doc.showMessage("Roboto adjusted 👌"); 
+        } else {
+          //show a message
+          doc.showMessage("it's not Roboto 😯");
+        }
+    }
+  }
+  
+}
