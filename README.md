@@ -7,7 +7,7 @@ A Sketch plugin that adjusts character spacing of Roboto font.
 
 # Usage
 Select the text layer that you want to adjust and run the pluguin:
-- Pluguins > Fix Roboto
+- Plugins > Fix Roboto
 - or use keyboard shortcasts
 
 # Shortcasts
