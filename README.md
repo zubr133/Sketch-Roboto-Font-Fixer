@@ -1,4 +1,4 @@
-<p><img src="https://github.com/zubr133/Sketch-Roboto-Font-Fixer/master/Sketch-Roboto-font-fixer.png" srcset="ttps://github.com/zubr133/Sketch-Roboto-Font-Fixer/master/Sketch-Roboto-font-fixer@2x.png 2x" alt="Sketch Roboto font fixer"></p>
+<p><img src="https://raw.githubusercontent.com/zubr133/Sketch-Roboto-Font-Fixer/master/Sketch-Roboto-font-fixer.png" srcset="https://raw.githubusercontent.com/zubr133/Sketch-Roboto-Font-Fixer/master/Sketch-Roboto-font-fixer.png@2x.png 2x" alt="Sketch Roboto font fixer"></p>
 
 # Sketch Roboto Font Fixer
 A Sketch plugin that adjusts character spacing of Roboto font.
